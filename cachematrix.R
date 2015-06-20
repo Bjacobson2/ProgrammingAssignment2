@@ -1,3 +1,4 @@
+##Push V.2 -edited
 ##Functions to create, cache, and get the inverse of a matrix; goal to save time.
 
 ##The first function makeCacheMatrix creates a matrix, to set the value of the matrix and 'get' it,
@@ -31,10 +32,10 @@ cacheSolve <- function(x, ...) {
     return(m)
   }
   data <- x$get()
-  m <- solve(datm<-a, ...)
+  m <- solve(data, ...)
   x$setInverse(m)
   m
 }
 
-#in order to run, use sample<-makeCacheMatrix(matric(...,..,..)), then solveCache(sample).
+#in order to run, use sample<-makeCacheMatrix(matrix(...,..,..)), then cacheSolve(sample).
 #possible error lapback routine if det(sample)=0, i.e. non-invertible
